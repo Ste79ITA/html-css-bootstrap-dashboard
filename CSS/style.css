@@ -79,11 +79,33 @@ a {
 
 .add-student {
   border: 1px solid white;
-  padding: 5px 7px;
+  padding: 5px 10px;
   border-radius: 3px;
   font-size: 13px;
   margin-left: 15px;
 }
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .logo {
+    border: none;
+  }
+  .status-bar {
+    height: 134px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
 /* DEBUG */
 
 .debug [class^='col'] {

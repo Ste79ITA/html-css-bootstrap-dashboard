@@ -89,26 +89,28 @@
 
           <!-- STATUS BAR -->
           <div class="main-view flex-grow-1">
-            <div class="status-bar d-flex flex-column gap-4 py-4 px-2">
-              <div class="new-students">
-                <p>
-                  Nuovo Studente
-                  <span class="add-student"
-                    ><a href="#"> <i class="fa-solid fa-plus"></i> </a
-                  ></span>
-                </p>
+            <div
+              class="status-bar d-flex flex-column flex-md-row-reverse gap-4 py-4 px-2 justify-content-around"
+            >
+              <div class="new-students py-3">
+                Nuovo Studente
+                <span class="add-student order-md-3 py-2"
+                  ><a href="#"> <i class="fa-solid fa-plus"></i> </a
+                ></span>
               </div>
-              <div class="boolean-plan">
+              <div class="boolean-plan order-md-3">
                 <span class="status-title">Boolean</span>
                 <span>Piano blaze</span>
                 <div>3 app >> +</div>
               </div>
-              <div class="online-students">
-                <div>Studenti online negli ultimi 30 minuti</div>
+              <div class="online-students order-md-2 py-2">
+                <div class="student-30">
+                  Studenti online negli ultimi 30 minuti
+                </div>
                 <div class="student-number">125</div>
               </div>
             </div>
-            <div class="view">VIEW</div>
+            <div class="view overflow-x-scroll">VIEW</div>
           </div>
         </main>
       </div>
