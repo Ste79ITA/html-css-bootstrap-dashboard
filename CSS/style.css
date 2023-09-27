@@ -10,7 +10,6 @@ figure img {
 /* FIRST SECTION */
 .row {
   height: 100vh;
-  background-color: red;
 }
 
 .aside {
@@ -31,11 +30,39 @@ figure img {
   color: orange;
 }
 
+/* MAIN HEADER */
+
+.main-header {
+  background-image: url('../img/sidebar-bg.png');
+  background-color: #051e34;
+  color: white;
+  width: 70px;
+}
+
+.header-nav a,
+.settings a {
+  color: white;
+}
+
+.main-view {
+  background-color: #f8f9fa;
+}
+
+/* MAIN VIEW */
+
+/* STATUS BAR */
+
+.status-bar {
+  background-color: #1b72e8;
+  color: white;
+  height: 264px;
+}
+
 /* DEBUG */
 
 .debug [class^='col'] {
   border: 1px solid greenyellow;
-  /* padding: 10px; */
+  padding: 10px;
 }
 
 .debug .aside-section {
@@ -45,5 +72,10 @@ figure img {
 
 .debug .aside-section {
   border: 1px solid greenyellow;
+  padding: 10px;
+}
+
+.debug .main-view {
+  border: 1px solid cornflowerblue;
   padding: 10px;
 }

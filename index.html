@@ -24,7 +24,7 @@
   <body class="debugg">
     <!-- FIRST SECTION -->
     <section class="container-fluid first-section">
-      <div class="row d-flex flex-column">
+      <div class="row flex-column">
         <aside class="col-auto aside d-flex py-2 px-0">
           <!-- LOGO -->
           <div
@@ -43,7 +43,41 @@
             <i class="fa-solid fa-bell"></i>
           </div>
         </aside>
-        <main class="col main flex-grow-1"></main>
+        <!-- MAIN -->
+        <main class="col main d-flex flex-grow-1 p-0">
+          <!-- MAIN HEADER -->
+          <header class="main-header d-flex flex-column text-center py-4">
+            <nav class="header-nav">
+              <ul class="list-unstyled d-flex flex-column gap-2">
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-signal"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="settings mt-auto">
+              <a href="#">
+                <i class="fa-solid fa-gear"></i>
+              </a>
+            </div>
+          </header>
+          <!-- MAIN VIEW -->
+          <div class="main-view flex-grow-1">
+            <div class="status-bar">STATUS</div>
+            <div class="view">VIEW</div>
+          </div>
+        </main>
       </div>
     </section>
 
@@ -55,3 +89,12 @@
     ></script>
   </body>
 </html>
+
+<nav class="nav-bar d-flex flex-column text-center">
+  <i class="fa-solid fa-house"></i>
+  <i class="fa-solid fa-chart-simple"></i>
+  <i class="fa-solid fa-signal"></i>
+</nav>
+<nav class="settings text-center">
+  <i class="fa-solid fa-gear"></i>
+</nav>
