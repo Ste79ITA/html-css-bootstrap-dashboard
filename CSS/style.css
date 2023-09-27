@@ -1,0 +1,49 @@
+img {
+  max-width: 100%;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+}
+
+/* FIRST SECTION */
+.row {
+  height: 100vh;
+  background-color: red;
+}
+
+.aside {
+  background-color: #f8f9fa;
+}
+.aside-section {
+  height: 49px;
+  background-color: #ffffff;
+}
+
+.logo {
+  width: 34px;
+  aspect-ratio: 1;
+  border: 2px solid black;
+}
+
+.bell {
+  color: orange;
+}
+
+/* DEBUG */
+
+.debug [class^='col'] {
+  border: 1px solid greenyellow;
+  /* padding: 10px; */
+}
+
+.debug .aside-section {
+  border: 1px solid greenyellow;
+  padding: 10px;
+}
+
+.debug .aside-section {
+  border: 1px solid greenyellow;
+  padding: 10px;
+}
