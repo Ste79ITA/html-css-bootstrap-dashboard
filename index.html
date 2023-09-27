@@ -35,7 +35,20 @@
             </figure>
           </div>
           <!-- SEARCH BAR -->
-          <div class="col aside-section search"></div>
+          <div class="col aside-section search d-flex align-items-center">
+            <div class="input-group rounded">
+              <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+              </span>
+              <input
+                type="search"
+                class="form-control rounded"
+                placeholder="Prova a cercare: Lezioni di Laravel"
+                aria-label="Search"
+                aria-describedby="search-addon"
+              />
+            </div>
+          </div>
           <!-- BELL -->
           <div
             class="col-auto aside-section bell d-flex jusify-content-center align-items-center px-3"
@@ -73,8 +86,28 @@
             </div>
           </header>
           <!-- MAIN VIEW -->
+
+          <!-- STATUS BAR -->
           <div class="main-view flex-grow-1">
-            <div class="status-bar">STATUS</div>
+            <div class="status-bar d-flex flex-column gap-4 py-4 px-2">
+              <div class="new-students">
+                <p>
+                  Nuovo Studente
+                  <span class="add-student"
+                    ><a href="#"> <i class="fa-solid fa-plus"></i> </a
+                  ></span>
+                </p>
+              </div>
+              <div class="boolean-plan">
+                <span class="status-title">Boolean</span>
+                <span>Piano blaze</span>
+                <div>3 app >> +</div>
+              </div>
+              <div class="online-students">
+                <div>Studenti online negli ultimi 30 minuti</div>
+                <div class="student-number">125</div>
+              </div>
+            </div>
             <div class="view">VIEW</div>
           </div>
         </main>
@@ -89,12 +122,3 @@
     ></script>
   </body>
 </html>
-
-<nav class="nav-bar d-flex flex-column text-center">
-  <i class="fa-solid fa-house"></i>
-  <i class="fa-solid fa-chart-simple"></i>
-  <i class="fa-solid fa-signal"></i>
-</nav>
-<nav class="settings text-center">
-  <i class="fa-solid fa-gear"></i>
-</nav>

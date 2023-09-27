@@ -26,6 +26,16 @@ figure img {
   border: 2px solid black;
 }
 
+.input-group,
+.input-group-text {
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.form-control {
+  border: none;
+  background-color: transparent;
+}
 .bell {
   color: orange;
 }
@@ -58,6 +68,22 @@ figure img {
   height: 264px;
 }
 
+a {
+  color: white;
+}
+
+.status-title,
+.student-number {
+  font-size: 30px;
+}
+
+.add-student {
+  border: 1px solid white;
+  padding: 5px 7px;
+  border-radius: 3px;
+  font-size: 13px;
+  margin-left: 15px;
+}
 /* DEBUG */
 
 .debug [class^='col'] {
