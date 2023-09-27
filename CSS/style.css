@@ -7,6 +7,11 @@ figure img {
   display: block;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 /* FIRST SECTION */
 .row {
   height: 100vh;
@@ -26,6 +31,13 @@ figure img {
   border: 2px solid black;
 }
 
+.logo-extended {
+  display: none;
+  color: #001632;
+  font-weight: bold;
+  font-size: 25px;
+}
+
 .input-group,
 .input-group-text {
   border: 1px solid #e5e5e5;
@@ -36,6 +48,15 @@ figure img {
   border: none;
   background-color: transparent;
 }
+
+.extended-menu {
+  display: none;
+}
+
+.extended-menu i {
+  color: #5b5858;
+}
+
 .bell {
   color: orange;
 }
@@ -49,13 +70,13 @@ figure img {
   width: 70px;
 }
 
-.header-nav a,
-.settings a {
-  color: white;
-}
-
 .main-view {
   background-color: #f8f9fa;
+}
+
+.nav-extended {
+  display: none;
+  margin-left: 10px;
 }
 
 /* MAIN VIEW */
@@ -66,10 +87,6 @@ figure img {
   background-color: #1b72e8;
   color: white;
   height: 264px;
-}
-
-a {
-  color: white;
 }
 
 .status-title,
@@ -97,6 +114,7 @@ a {
   .logo {
     border: none;
   }
+
   .status-bar {
     height: 134px;
   }
@@ -109,6 +127,17 @@ a {
 }
 
 @media (min-width: 1400px) {
+  .extended-menu {
+    display: flex;
+  }
+
+  .ext {
+    display: inline;
+  }
+
+  .main-header {
+    width: 150px;
+  }
 }
 
 /* DEBUG */

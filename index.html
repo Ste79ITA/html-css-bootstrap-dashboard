@@ -33,6 +33,7 @@
             <figure class="logo mb-0">
               <img src="./img/mobile-logo.png" alt="" />
             </figure>
+            <span class="logo-extended ext">boolean</span>
           </div>
           <!-- SEARCH BAR -->
           <div class="col aside-section search d-flex align-items-center">
@@ -48,6 +49,26 @@
                 aria-describedby="search-addon"
               />
             </div>
+          </div>
+          <!-- EXTENED MENU -->
+          <div class="extended-menu align-items-center">
+            <ul class="list-unstyled d-flex gap-3 px-3 mb-0">
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-list"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-circle-question"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </a>
+              </li>
+            </ul>
           </div>
           <!-- BELL -->
           <div
@@ -65,16 +86,19 @@
                 <li>
                   <a href="#">
                     <i class="fa-solid fa-house"></i>
+                    <span class="nav-extended ext">Home</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <i class="fa-solid fa-chart-simple"></i>
+                    <span class="nav-extended ext">Stats</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
                     <i class="fa-solid fa-signal"></i>
+                    <span class="nav-extended ext">Signals</span>
                   </a>
                 </li>
               </ul>
@@ -82,6 +106,7 @@
             <div class="settings mt-auto">
               <a href="#">
                 <i class="fa-solid fa-gear"></i>
+                <span class="nav-extended ext">Admin</span>
               </a>
             </div>
           </header>
@@ -103,7 +128,7 @@
                 <span class="badge">Piano blaze</span>
                 <div>
                   <span class="badge">3 app</span> >>
-                  <span class="badge">+</span>
+                  <span class="badge"><a href="#">+</a></span>
                 </div>
               </div>
               <div class="online-students order-md-2 py-2">
