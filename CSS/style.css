@@ -77,6 +77,11 @@ a {
   font-size: 30px;
 }
 
+.badge {
+  background-color: #165bba;
+  border-radius: 999px;
+}
+
 .add-student {
   border: 1px solid white;
   padding: 5px 10px;
