@@ -138,6 +138,20 @@ a {
   border: none;
 }
 
+/* OFFCANVAS */
+
+.offcanvas {
+  --bs-offcanvas-width: 80vw;
+}
+
+/* OFFCANVAS FORM */
+
+.btn.reset {
+  background-color: orange;
+  border-color: orange;
+  color: black;
+}
+
 /* MAIN */
 
 .card label {
@@ -161,12 +175,20 @@ a {
     white-space: wrap;
     max-width: 200px;
   }
+
+  .offcanvas {
+    --bs-offcanvas-width: 80vw;
+  }
 }
 
 @media (min-width: 992px) {
   .student-30 {
     white-space: wrap;
     max-width: 300px;
+  }
+
+  .offcanvas {
+    --bs-offcanvas-width: 50vw;
   }
 }
 
