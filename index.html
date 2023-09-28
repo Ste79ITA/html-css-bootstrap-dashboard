@@ -10,7 +10,6 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./CSS/style.css" />
     <script
       src="https://kit.fontawesome.com/6bbc3537db.js"
       crossorigin="anonymous"
@@ -20,11 +19,12 @@
         searchPseudoElements: true,
       };
     </script>
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body class="debugg">
     <!-- FIRST SECTION -->
     <section class="container-fluid first-section">
-      <div class="row flex-column">
+      <div class="row main flex-column">
         <aside class="col-auto aside d-flex py-2 px-0">
           <!-- LOGO -->
           <div
@@ -70,17 +70,36 @@
               </li>
             </ul>
           </div>
-          <!-- BELL -->
-          <div
-            class="col-auto aside-section bell d-flex jusify-content-center align-items-center px-3"
-          >
-            <i class="fa-solid fa-bell"></i>
+          <!-- DROPDOWN BELL -->
+          <div class="dropdown d-flex align-items-center">
+            <button
+              class="btn"
+              type="button"
+              id="dropdownMenu2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-bell"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li>
+                <button class="dropdown-item" type="button">Profilo</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">
+                  Fatturazione
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">Logout</button>
+              </li>
+            </ul>
           </div>
         </aside>
         <!-- MAIN -->
         <main class="col main d-flex flex-grow-1 p-0">
           <!-- MAIN HEADER -->
-          <header class="main-header d-flex flex-column text-center py-4">
+          <header class="main-header d-flex flex-column text-center py-4 px-2">
             <nav class="header-nav">
               <ul class="list-unstyled d-flex flex-column gap-2">
                 <li>
@@ -115,15 +134,15 @@
           <!-- STATUS BAR -->
           <div class="main-view flex-grow-1">
             <div
-              class="status-bar d-flex flex-column flex-md-row-reverse gap-4 py-4 px-2 justify-content-around"
+              class="status-bar d-flex flex-column flex-md-row gap-4 py-4 px-2 justify-content-around"
             >
-              <div class="new-students py-3">
+              <div class="new-students py-3 order-md-3">
                 Nuovo Studente
-                <span class="add-student order-md-3 py-2"
+                <span class="add-student py-2"
                   ><a href="#"> <i class="fa-solid fa-plus"></i> </a
                 ></span>
               </div>
-              <div class="boolean-plan order-md-3">
+              <div class="boolean-plan">
                 <span class="status-title">Boolean</span>
                 <span class="badge">Piano blaze</span>
                 <div>
@@ -131,14 +150,143 @@
                   <span class="badge"><a href="#">+</a></span>
                 </div>
               </div>
-              <div class="online-students order-md-2 py-2">
+              <div class="online-students py-2">
                 <div class="student-30">
                   Studenti online negli ultimi 30 minuti
                 </div>
                 <div class="student-number">125</div>
               </div>
             </div>
-            <div class="view overflow-x-scroll">VIEW</div>
+            <!-- VIEW -->
+            <div class="view d-flex flex-wrap py-4 overflow-hidden">
+              <div class="container-fluid">
+                <div class="row gy-4">
+                  <!-- FIRST COLUMN -->
+                  <div class="col-12 col-lg-8 gap-4 d-flex flex-column">
+                    <!-- CARD -->
+                    <div class="card" style="width: 100%">
+                      <div class="card-header">Prossime Classi</div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="card" style="width: 100%">
+                      <div class="card-header">F.A.Q.</div>
+                      <!-- ACCORDION -->
+                      <div
+                        class="accordion accordion-flush"
+                        id="accordionFlushExample"
+                      >
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseOne"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseOne"
+                            >
+                              Come aggiungere un nuovo studente ?
+                            </button>
+                          </h2>
+                          <div
+                            id="flush-collapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample"
+                          >
+                            <div class="accordion-body">
+                              Clicca sul + in alto nella sezione blu.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseTwo"
+                            >
+                              Come posso accedere alle informazioni del mio
+                              account ?
+                            </button>
+                          </h2>
+                          <div
+                            id="flush-collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo"
+                            data-bs-parent="#accordionFlushExample"
+                          >
+                            <div class="accordion-body">
+                              Clicca sull'icona della campanella.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#flush-collapseThree"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseThree"
+                            >
+                              Posso usare questa dashboard da mobile ?
+                            </button>
+                          </h2>
+                          <div
+                            id="flush-collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree"
+                            data-bs-parent="#accordionFlushExample"
+                          >
+                            <div class="accordion-body">Si :)</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- SECOND COLUMN
+               -->
+                  <div class="col-12 col-lg-4">
+                    <!-- CARD -->
+                    <div class="card todo" style="width: 100%">
+                      <div class="card-header">TODO</div>
+                      <!-- TODO LIST -->
+                      <div class="list-group">
+                        <label class="list-group-item">
+                          <input
+                            class="form-check-input me-1"
+                            type="checkbox"
+                            value=""
+                          />
+                          Kickoff nuove classi
+                        </label>
+                        <label class="list-group-item">
+                          <input
+                            class="form-check-input me-1"
+                            type="checkbox"
+                            value=""
+                          />
+                          Lezione su Bootstrap 5 in classe #106
+                        </label>
+                        <label class="list-group-item">
+                          <input
+                            class="form-check-input me-1"
+                            type="checkbox"
+                            value=""
+                          />
+                          Controllare username github studenti
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>

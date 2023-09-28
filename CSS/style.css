@@ -13,13 +13,23 @@ a {
 }
 
 /* FIRST SECTION */
-.row {
+.row.main {
   height: 100vh;
 }
 
 .aside {
   background-color: #f8f9fa;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
+
+.main {
+  margin-top: 32px;
+}
+
 .aside-section {
   height: 49px;
   background-color: #ffffff;
@@ -64,10 +74,15 @@ a {
 /* MAIN HEADER */
 
 .main-header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   background-image: url('../img/sidebar-bg.png');
   background-color: #051e34;
   color: white;
   width: 70px;
+  height: calc(100% - 65px);
+  z-index: -1;
 }
 
 .main-view {
@@ -79,14 +94,22 @@ a {
   margin-left: 10px;
 }
 
+.header-nav li:hover,
+.settings:hover {
+  background-color: #677182;
+}
+
 /* MAIN VIEW */
+
+.main-view {
+  margin-left: 70px;
+}
 
 /* STATUS BAR */
 
 .status-bar {
   background-color: #1b72e8;
   color: white;
-  height: 264px;
 }
 
 .status-title,
@@ -107,6 +130,18 @@ a {
   margin-left: 15px;
 }
 
+.dropdown .btn {
+  color: orange;
+  border: none;
+}
+
+/* MAIN */
+
+.card label {
+  white-space: nowrap;
+  min-width: 320px;
+}
+
 @media (min-width: 576px) {
 }
 
@@ -118,9 +153,18 @@ a {
   .status-bar {
     height: 134px;
   }
+
+  .student-30 {
+    white-space: wrap;
+    max-width: 200px;
+  }
 }
 
 @media (min-width: 992px) {
+  .student-30 {
+    white-space: wrap;
+    max-width: 300px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -137,6 +181,9 @@ a {
 
   .main-header {
     width: 150px;
+  }
+  .main-view {
+    margin-left: 150px;
   }
 }
 
@@ -160,4 +207,11 @@ a {
 .debug .main-view {
   border: 1px solid cornflowerblue;
   padding: 10px;
+}
+.debug .view {
+  border: 1px solid orange;
+  padding: 10px;
+}
+.debug .card {
+  border: 1px solid orange;
 }
