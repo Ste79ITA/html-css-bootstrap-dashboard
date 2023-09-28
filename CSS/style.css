@@ -159,6 +159,16 @@ a {
   min-width: 320px;
 }
 
+.active-users {
+  border: 1px solid #dee2e6;
+}
+
+.card-link.users {
+  color: #1b72e8;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
 @media (min-width: 576px) {
 }
 
