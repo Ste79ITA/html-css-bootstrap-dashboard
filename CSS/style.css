@@ -23,7 +23,6 @@ a {
   width: 100vw;
   top: 0;
   left: 0;
-  overflow: hidden;
 }
 
 .main {
@@ -48,13 +47,13 @@ a {
   font-size: 25px;
 }
 
-.input-group,
-.input-group-text {
+.input-group.search,
+.input-group-text.search {
   border: 1px solid #e5e5e5;
   background-color: #e5e5e5;
 }
 
-.form-control {
+.form-control.search {
   border: none;
   background-color: transparent;
 }
@@ -82,7 +81,6 @@ a {
   color: white;
   width: 70px;
   height: calc(100% - 65px);
-  z-index: -1;
 }
 
 .main-view {
@@ -128,6 +126,11 @@ a {
   border-radius: 3px;
   font-size: 13px;
   margin-left: 15px;
+}
+
+.btn.add-student:hover {
+  background-color: white;
+  color: #1b72e8;
 }
 
 .dropdown .btn {

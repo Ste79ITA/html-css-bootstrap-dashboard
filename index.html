@@ -37,13 +37,13 @@
           </div>
           <!-- SEARCH BAR -->
           <div class="col aside-section search d-flex align-items-center">
-            <div class="input-group rounded">
-              <span class="input-group-text border-0" id="search-addon">
+            <div class="input-group search rounded">
+              <span class="input-group-text search border-0" id="search-addon">
                 <i class="fas fa-search"></i>
               </span>
               <input
                 type="search"
-                class="form-control rounded"
+                class="form-control search rounded"
                 placeholder="Prova a cercare: Lezioni di Laravel"
                 aria-label="Search"
                 aria-describedby="search-addon"
@@ -137,10 +137,37 @@
               class="status-bar d-flex flex-column flex-md-row gap-4 py-4 px-2 justify-content-around"
             >
               <div class="new-students py-3 order-md-3">
-                Nuovo Studente
-                <span class="add-student py-2"
-                  ><a href="#"> <i class="fa-solid fa-plus"></i> </a
-                ></span>
+                <span>Nuovo Studente</span>
+                <!-- OFFCANVAS -->
+                <button
+                  class="btn add-student btn-primary"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Inserisci un nuovo utente</h5>
+                    <button
+                      type="button"
+                      class="btn-close text-reset"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <!-- OFFCANVAS FORM -->
+                  </div>
+                </div>
               </div>
               <div class="boolean-plan">
                 <span class="status-title">Boolean</span>
